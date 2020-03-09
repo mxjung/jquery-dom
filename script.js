@@ -25,7 +25,6 @@ $('aside')
 
 //step 7
 let rBgVals = $('.form-control');
-let rBgArr = [255, 255, 255];
 // rBgVals.on( 'input',  function(){$('body').css('background-color', `${rBgVals[0]}`)  })
 rBgVals.on('input', function(){
     let redVal = rBgVals.eq(0).val();
@@ -33,3 +32,6 @@ rBgVals.on('input', function(){
     let greenVal = rBgVals.eq(2).val();
     $('body').css('background-color', `rgb(${redVal} , ${greenVal} , ${blueVal})`);
 })
+
+//Stepi 8
+$('img').on('click', function(){this.remove()});
